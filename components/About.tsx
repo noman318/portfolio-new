@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SeactionHeading from "./SeactionHeading";
+import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     >
-      <SeactionHeading>About me</SeactionHeading>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Computer Enginnering</span>, I decided to
