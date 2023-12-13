@@ -89,5 +89,4 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "Express",
-  "Framer Motion",
 ] as const;
