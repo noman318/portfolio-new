@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Mumbai, MH",
     description:
-      "I'm now a full-stack developer working as a Software Developer at NeoSoft. My stack includes React, Next.js, TypeScript, Tailwind, MOngoose and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer working as a Software Developer at NeoSoft. My stack includes React, Next.js, TypeScript, Tailwind, Mongoose and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
