@@ -8,7 +8,8 @@ import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 const Header = () => {
   // const [activeSection, setActiveSection] = useState("Home");
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   // console.log("activeSection", activeSection);
   // const handleActiveSection = (section: any) => {
   //   setActiveSection(section);
@@ -36,7 +37,10 @@ const Header = () => {
                     { "text-gray-950": activeSection === link.name }
                   )}
                   href={link.hash}
-                  onClick={() => setActiveSection(link.name)}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                  }}
                 >
                   {link.name}
                   {link.name === activeSection && (
