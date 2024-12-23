@@ -35,20 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Back-End Developer",
+    title: "Full-Stack Developer",
     location: "Mumbai, MH",
     description:
-      "While graduating I did a 6 months of Internship as a back-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021",
+      "Worked as a Full-Stack Developer at NeoSoft, where I gained hands-on experience with React, TypeScript, Mongoose, and MongoDB.",
+    icon: React.createElement(FaReact),
+    date: "Sept 2022 - Feb 2024",
   },
   {
     title: "Full-Stack Developer",
     location: "Mumbai, MH",
     description:
-      "I'm now a full-stack developer working as a Software Developer at NeoSoft. My stack includes React, Next.js, TypeScript, Tailwind, Mongoose and MongoDB. I'm open to full-time opportunities.",
+      "Worked as a Full-Stack Developer at Pyth 3D CAD, utilizing technologies like React, Next.js, TypeScript, Prisma, Tailwind, and MySQL.",
     icon: React.createElement(FaReact),
-    date: "2022 - present",
+    date: "Feb 2024 - Oct 2024",
+  },
+  {
+    title: "Frontend Developer",
+    location: "Mumbai, MH",
+    description:
+      "Currently working as a Frontend Developer at Softcell Technologies, focusing on React, Next.js, TypeScript, Tailwind, and Ant Design.",
+    icon: React.createElement(FaReact),
+    date: "Oct 2024 - Present",
   },
 ] as const;
 
