@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Mumbai, MH",
     description:
-      "Worked as a Full-Stack Developer at NeoSoft, where I gained hands-on experience with React, TypeScript, Mongoose, and MongoDB.",
+      "Worked as a Full-Stack Developer at NeoSoft, where I gained hands-on experience with React, Redux, TypeScript, Mongoose and MongoDB.",
     icon: React.createElement(FaReact),
     date: "Sept 2022 - Feb 2024",
   },
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Mumbai, MH",
     description:
-      "Worked as a Full-Stack Developer at Pyth 3D CAD, utilizing technologies like React, Next.js, TypeScript, Prisma, Tailwind, and MySQL.",
+      "Worked as a Full-Stack Developer at Pyth 3D CAD, utilizing technologies like React, Redux, Next.js, TypeScript, Prisma, Tailwind and MySQL.",
     icon: React.createElement(FaReact),
     date: "Feb 2024 - Oct 2024",
   },
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Frontend Developer",
     location: "Mumbai, MH",
     description:
-      "Currently working as a Frontend Developer at Softcell Technologies, focusing on React, Next.js, TypeScript, Tailwind, and Ant Design.",
+      "Currently working as a Frontend Developer at Softcell Technologies, focusing on React, Next.js, TypeScript, Tailwind, Jotai and Ant Design.",
     icon: React.createElement(FaReact),
     date: "Oct 2024 - Present",
   },
@@ -94,6 +94,8 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
+  "Material UI",
+  "MySQL",
   "MongoDB",
   "Redux",
   "Express",

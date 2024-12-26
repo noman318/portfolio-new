@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
-import SectionHeading from "./SectionHeading";
-import { animate, motion } from "framer-motion";
-import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/hooks/hooks";
+import { skillsData } from "@/lib/data";
+import { motion } from "framer-motion";
+import SectionHeading from "./SectionHeading";
 
 const Skills = () => {
   const { ref } = useSectionInView("Skills");

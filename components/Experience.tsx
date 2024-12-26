@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Fragment } from "react";
 
 import {
   VerticalTimeline,
@@ -19,7 +19,7 @@ export default function Experience() {
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline>
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
+          <Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
                 boxShadow: "none",
@@ -33,11 +33,9 @@ export default function Experience() {
               }}
               date={item.date}
               icon={item.icon}
-              //   iconStyle={{
-              //     background:
-              //       theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
-              //     fontSize: "1.5rem",
-              //   }}
+              iconStyle={{
+                background: "whitesmoke",
+              }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
@@ -45,7 +43,7 @@ export default function Experience() {
                 {item.description}
               </p>
             </VerticalTimelineElement>
-          </React.Fragment>
+          </Fragment>
         ))}
       </VerticalTimeline>
     </section>
