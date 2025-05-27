@@ -1,12 +1,30 @@
-import React from "react";
+"use client";
+import { sendEmail } from "@/actions/sendEmail";
+import { useSectionInView } from "@/hooks/hooks";
+import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
 import SubmitBtn from "./SubmitBtn";
-
+import toast from "react-hot-toast";
 const Contact = () => {
+  const { ref } = useSectionInView("Contact", 0.5);
+
   return (
-    <section
+    <motion.section
       id="contact"
       className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      ref={ref}
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
+      viewport={{
+        once: true,
+      }}
     >
       <SectionHeading>Contact Me</SectionHeading>
       <p className=" text-gray-700">
@@ -16,7 +34,19 @@ const Contact = () => {
         </a>{" "}
         or through this form.
       </p>
-      <form className="mt-10 flex flex-col">
+      <form
+        className="mt-10 flex flex-col"
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
+        }}
+      >
         <input
           className="h-14 px-4 rounded-lg borderBlack transition-all dark:outline-none"
           name="senderEmail"
@@ -34,7 +64,7 @@ const Contact = () => {
         />
         <SubmitBtn />
       </form>
-    </section>
+    </motion.section>
   );
 };
 
