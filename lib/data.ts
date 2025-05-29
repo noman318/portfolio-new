@@ -1,10 +1,10 @@
+import blocksImg from "@/public/blocks.png";
+import cpImg from "@/public/cp_img.png";
+import mazadImg from "@/public/mazadv1.png";
+import pedgogImg from "@/public/pedgog.png";
+import princeEnggImg from "@/public/princeengg.png";
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -62,25 +62,51 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Cloud Protect",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A multicloud services management platform for industries that integrates AWS, Azure, and GCP on a single platform.",
+    tags: ["React", "Next.js", "Node.js", "Express.js", "Cloud Services"],
+    imageUrl: cpImg,
+    liveUrl: "https://cloud-protect-app.com", // Replace with actual URL
   },
   {
-    title: "rmtDev",
+    title: "Blocks 2D Panel Optimizer",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A web app that optimizes cutting patterns for sheet materials to minimize waste and enhance project planning.",
+    tags: ["React", "Next.js", "TypeScript", "Node.js", "Express.js", "MySQL"],
+    imageUrl: blocksImg,
+    liveUrl: "https://cutnc.com/", // Replace with actual URL
   },
   {
-    title: "Word Analytics",
+    title: "Pedgog App Services",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A workflow analysis website for Delhi police and CSC roles with interactive UI, data visualization, and RESTful APIs.",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API",
+      "MaterialUI",
+    ],
+    imageUrl: pedgogImg,
+    liveUrl: "https://csc.pedgog.in/application",
+  },
+  {
+    title: "Mazad Admin Bahrain",
+    description:
+      "Admin panel for an auction platform with enhanced management and data visualization functionalities.",
+    tags: ["React", "TypeScript", "ChakraUI", "Tanstack Table", "CSS3"],
+    imageUrl: mazadImg,
+    liveUrl: "https://mazad.bh/", // Replace with actual URL
+  },
+  {
+    title: "Billing System (Prince Engineers)",
+    description:
+      "MERN stack billing system that manages invoices, calculates GST, and generates downloadable PDFs.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "PDF Generation"],
+    imageUrl: princeEnggImg,
+    liveUrl: "https://prince-engineers-billing-system.onrender.com/", // Replace with actual URL
   },
 ] as const;
 
